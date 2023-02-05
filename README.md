@@ -2,7 +2,7 @@
 The goal of this project is to convert sky textures in the format of .ktx to .png and then crop them using the UV map information.
 
 # Steps Involved Installing required libraries: 
-The following libraries need to be installed for the code to work: re, PIL, and os. Ifor PIL do:
+The following libraries need to be installed for the code to work: re, PIL, and os. for PIL do:   
 ```pip install pillow```
 
 # Converting .ktx files to .png files:
