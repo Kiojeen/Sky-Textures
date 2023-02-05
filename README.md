@@ -14,7 +14,8 @@ The code will parse the "UIPackedAtlas.lua" file to extract information about th
 Cleaning up intermediate files: After the .png files are successfully cropped, the code will delete all intermediate .pvr files.
 
 Usage:
-Put all of your .ktx files that you have copied from sky assets in the Input file
-Run the python script run.py in cmd
-Wait for the script to be done
-The output will be in the folder Output
+1. Put all of your .ktx files that you have copied from sky assets in the Input file
+2. Include the uv file "UIPackedAtlas.lua" in the same directory as the scipt
+3. Run the python script run.py in cmd
+4. Wait for the script to be done
+5. The output will be in the folder Output
