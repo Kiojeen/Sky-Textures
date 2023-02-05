@@ -74,6 +74,7 @@ def crop_packed_atlas():
                     new_data.append(item)
             cropped_image.putdata(new_data)
         cropped_image.save(f"{output_folder}/{name}.png")
+        print(f"{name}.png: Saved successfully")
 
 if __name__ == "__main__":
     ktx_to_png()
