@@ -11,7 +11,7 @@ pvr_tool_path = "PVRTexToolCLI.exe"
 output_folder = "Output"
 
 def ktx_to_png():
-    # make the output folder if it doesn't exist
+    # make the output folder and the png folder if they don't exist
     if not os.path.exists(png_folder):
         os.makedirs(png_folder)
     if not os.path.exists(output_folder):
