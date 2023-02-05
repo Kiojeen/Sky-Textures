@@ -3,7 +3,7 @@ import os
 import subprocess
 from PIL import Image
 
-remove_black = False
+remove_black = True
 
 input_folder = "Input"
 png_folder = "PNG"
@@ -63,16 +63,16 @@ def crop_packed_atlas():
         right, lower = int(x1 * width), int(y1 * height)
         crop_box = (left, upper, right, lower)
         cropped_image = image.crop(crop_box)
-        if remove_black:
-            cropped_image = cropped_image.convert("RGBA")
-            datas = cropped_image.getdata()
-            new_data = []
-            for item in datas:
-                if item[0] == 0 and item[1] == 0 and item[2] == 0:
-                    new_data.append((255, 255, 255, 0))
-                else:
-                    new_data.append(item)
-            cropped_image.putdata(new_data)
+
+        cropped_image = cropped_image.convert("RGBA")
+        datas = cropped_image.getdata()
+        new_data = []
+        for item in datas:
+            if item[0] > 0 and item[1] == 0 and item[2] == 0:
+                new_data.append(item)
+            else:
+                new_data.append((255, 255, 255, 0))
+        cropped_image.putdata(new_data)
         cropped_image.save(f"{output_folder}/{name}.png")
         print(f"{name}.png: Saved successfully")
 
