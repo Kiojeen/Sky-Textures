@@ -17,6 +17,6 @@ After the .png files are successfully cropped, the code will delete all intermed
 # Usage:
 1. Put all of your .ktx files that you have copied from sky assets in the Input file
 2. Include the uv file "UIPackedAtlas.lua" in the same directory as the scipt
-3. Run the python script run.py in cmd
+3. Open cmd and locate to the folder that contains run.py and run it. ```python run.py```
 4. Wait for the script to be done
 5. The output will be in the folder Output
