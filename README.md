@@ -12,3 +12,9 @@ Cropping .png files using UV map information:
 The code will parse the "UIPackedAtlas.lua" file to extract information about the UV map. This information will be used to crop each .png file and save the result in a separate file with the same name as the image region. The code will also remove the black background from the cropped images if needed.
 
 Cleaning up intermediate files: After the .png files are successfully cropped, the code will delete all intermediate .pvr files.
+
+Usage:
+Put all of your .ktx files that you have copied from sky assets in the Input file
+Run the python script run.py in cmd
+Wait for the script to be done
+The output will be in the folder Output
