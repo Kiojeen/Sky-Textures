@@ -3,7 +3,7 @@ The goal of this project is to convert sky textures in the format of .ktx to .pn
 
 # Steps Involved Installing required libraries: 
 The following libraries need to be installed for the code to work: re, PIL, and os. Ifor PIL do:
-pip install pillow
+```pip install pillow
 
 # Converting .ktx files to .png files:
 The code will search for all files ending with .kts in the folder called "Input". For each .ktx file, it will use the tool "PVRTexToolCLI.exe" to convert it to a .png file. The result will be saved in a folder called "PNG".
