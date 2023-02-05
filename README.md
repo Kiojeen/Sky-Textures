@@ -1,4 +1,4 @@
-Background 
+Background:
 The goal of this project is to convert sky textures in the format of .ktx to .png and then crop them using the UV map information.
 
 Steps Involved Installing required libraries: 
